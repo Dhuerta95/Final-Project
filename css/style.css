@@ -1,0 +1,1201 @@
+/* Skip link styles */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    z-index: 1000;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/*header and banner styles*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.cpa-header {
+    text-align: center;
+}
+
+.banner {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    color: black;
+    padding: 30px 10px;
+    border-top: 12px solid red;
+}
+
+.banner h1 {
+    font-family: Impact, Arial Black, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    color: black;
+
+    letter-spacing: 3px;
+
+    /* Outline + pop */
+    text-shadow:
+        3px 3px 0 red,
+        -2px -2px 0 yellow;
+
+    margin: 0;
+}
+
+.tagline {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    text-shadow: 1px 1px 0 yellow;
+}
+
+nav {
+    background-color: red;
+    padding: 12px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    background-color: black;
+    color: yellow;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.cta {
+    background-color: #cc0000;
+    color: yellow;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.cta-link {
+    color: yellow;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.cta-link:hover {
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 0 30px 30px;
+}
+
+/* footer styles */
+
+.cpa-footer {
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    background-color: #e53935;
+    color: yellow;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px 0;
+    font-weight: bold;
+}
+
+/* moving container */
+.ticker-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+}
+
+/* text blocks */
+.ticker-track span {
+    padding-right: 60px;
+    font-size: 1.8rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ticker-track {
+        animation: none;
+    }
+}
+/* seamless animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Main yellow area */
+.footer-main {
+    background-color: #ffeb00;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+/* Blue CTA link */
+.cta-link a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cta-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer nav links */
+.footer-links {
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright text */
+.copyright {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Home page about us section formatting */
+
+.welcome-banner {
+    background: linear-gradient(to right, #ffe600, #ffb300);
+    color: #d40000;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 25px 10px;
+    border-top: 8px solid red;
+    border-bottom: 8px solid #c4c400;
+    letter-spacing: 3px;
+    font-family: Impact, Arial Black, sans-serif;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #fff;
+}
+
+.panic-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* left | middle | right */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* LEFT COLUMN (stacked) */
+.left-col {
+    display: grid;
+    gap: 15px;
+}
+
+/* MIDDLE COLUMN */
+.middle-col {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 15px;
+}
+
+/* TOP ROW (2 side-by-side) */
+.top-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* BOTTOM WIDE BOX */
+.bottom-wide {
+    background: #0033a0;
+    color: yellow;
+    padding: 20px;
+    font-weight: bold;
+    border: 5px solid red;
+    text-align: center;
+}
+
+/* RIGHT COLUMN */
+.right-col {
+    display: flex;
+}
+
+/* Make right box fill height */
+.tall {
+    flex: 1;
+}
+
+/* GENERAL BOX STYLE */
+.ad-box {
+    background: linear-gradient(to bottom, #ffe600, #ffb300);
+    border: 5px solid red;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* TEXT STYLING */
+.ad-box h3 {
+    margin: 0 0 10px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.ad-box p {
+    margin-bottom: 10px;
+}
+
+.ad-box span {
+    display: block;
+    background: blue;
+    color: yellow;
+    padding: 8px;
+}
+
+.tax-meme {
+    width: 100%;
+    max-width: 260px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+.tax-img {
+    width: 100%;
+    max-width: 260px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 4px solid red;
+}
+
+/* ABOUT Page */
+
+.values-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.values-list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.2rem;
+    background: linear-gradient(to right, #ffe600, #ffb300);
+    color: #d40000;
+    padding: 20px 10px;
+    margin: 0 0 30px 0;
+    border-top: 8px solid red;
+    border-bottom: 8px solid #c4c400;
+    font-family: Impact, Arial Black, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow:
+        4px 4px 0 #000,
+        -2px -2px 0 #fff;
+}
+
+.about-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-section img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    color: #111;
+    line-height: 1.7;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-content h2 {
+    font-size: 2.4rem;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.about-content ul {
+    padding-left: 30px;
+    margin: 0;
+}
+
+.about-content li {
+    font-size: 1.4rem;
+    margin-bottom: 22px;
+}
+
+.about-content strong {
+    font-weight: 800;
+    color: #000;
+}
+
+.ad-box.tall {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 6px;
+    flex-grow: 1;
+    object-fit: cover;
+    object-position: left center;
+}
+
+.founding-quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: Georgia, "Times New Roman", serif;
+    margin: 35px auto;
+    max-width: 800px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.founding-quote::before,
+.founding-quote::after {
+    content: "—";
+    margin: 0 12px;
+    color: #bbb;
+}
+
+.values-section {
+    max-width: 1100px;
+    margin: 20px auto 60px;
+    padding: 0 30px;
+}
+
+.values-section h2 {
+    text-align: center;
+    font-size: 3.2rem;
+    background: linear-gradient(to right, #ffe600, #ffb300);
+    color: #d40000;
+    padding: 20px 10px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-top: 8px solid red;
+    border-bottom: 8px solid #c4c400;
+    font-family: Impact, Arial Black, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #fff;
+}
+
+
+/* Home page testmonial styles */
+
+.testimonials {
+    max-width: 1100px;
+    margin: 10px auto 40px;
+    padding: 0 30px;
+}
+
+.testimonials h2 {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to right, #ffe600, #ffb300);
+    color: #d40000;
+    padding: 25px 10px;
+    margin: 0 0 0 0;
+    border-top: 8px solid red;
+    border-bottom: 8px solid #c4c400;
+    font-family: Impact, Arial Black, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #fff;
+}
+
+.testimonial-triangle {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 20px;
+    margin-top: 0px;
+}
+
+.testimonial-card {
+    background-color: #fff7cc;
+    border: 5px solid red;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card img {
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    border: 4px solid #ffcc00;
+}
+
+.testimonial-card p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.testimonial-card.left,
+.testimonial-card.right {
+    margin-top: 0;
+    transform: translateY(35px);
+}
+
+.testimonial-card.center {
+    margin-top: 0;
+    transform: translateY(20px) scale(1.05);
+}
+
+
+@media (max-width: 900px) {
+    .testimonial-triangle {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card.left,
+    .testimonial-card.right,
+    .testimonial-card.center {
+        margin-top: 0;
+        transform: none;
+    }
+}
+
+/* Our Impact section styles */
+
+.impact {
+    max-width: 1100px;
+    margin: 20px auto 20px;
+    padding: 0 30px;
+}
+
+.impact h2 {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to right, #ffe600, #ffb300);
+    color: #d40000;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-top: 8px solid red;
+    border-bottom: 8px solid #c4c400;
+    font-family: Impact, Arial Black, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #fff;
+}
+
+.impact-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background-image: url("../images/money.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 50px 40px;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    gap: 30px;
+}
+
+.impact-cards::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 215, 0, 0.28);
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.impact-card {
+    background: none;
+    border: none;
+    padding: 0;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    max-width: 420px;
+}
+
+.impact-card p {
+    margin: 0;
+    color: #000;
+}
+
+.impact-number {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 6px;
+    line-height: 1;
+}
+
+.impact-card p:last-child {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.impact-note {
+    text-align: left;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Contact page styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9e9e9;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-left {
+    flex: 1;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+.hours-box {
+    width: 340px;
+    background-color: #f4f4f4;
+    border-radius: 28px;
+    padding: 28px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-top: 10px solid #ffcc00;
+}
+
+.hours-box h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 2rem;
+    color: #222;
+}
+
+.hours-intro {
+    text-align: center;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 6px 0;
+    font-size: 1.2rem;
+}
+
+.day {
+    font-weight: bold;
+}
+
+.time {
+    text-align: right;
+}
+
+
+@media screen and (max-width: 900px) {
+    .contact-row {
+        flex-direction: column;
+        padding: 24px 20px;
+    }
+
+    .hours-box {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .consultation-section {
+        padding: 0 20px 40px;
+    }
+}
+
+.contact-tagline {
+    text-align: center;
+    margin: 18px 0 12px;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    color: #111;
+    text-shadow: 2px 2px 0 #ffd400;
+}
+
+.contact-left h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 0 red;
+}
+
+.contact-details {
+    background: #fff3cd; /* soft yellow */
+    border-left: 6px solid red;
+    padding: 16px 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.contact-section-wrap {
+    background: linear-gradient(to bottom, #f3f3f3, #ece6d0);
+    padding: 30px 0 50px;
+}
+
+.consultation-section {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 30px;
+    border-top: 4px solid red;
+}
+
+
+
+/* Contact page hero image styles */
+
+.contact-hero {
+    width: 100%;
+    height: 500px; /* adjust if you want taller */
+    overflow: hidden;
+}
+
+.contact-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* KEY: fills like your About page */
+    display: block;
+}
+
+
+/* Services page styles */
+
+.service {
+    background: linear-gradient(135deg, #fff8cc, #ffd54d); /* soft yellow */
+    padding: 25px;
+    border-radius: 14px;
+    border: 3px solid red;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service h3 {
+    color: red;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.service p {
+    color: #222;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.services-intro {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #222;
+    padding: 18px 24px;
+    background: #fff8cc;
+    border-left: 6px solid red;
+    border-right: 6px solid red;
+    border-radius: 12px;
+}
+
+.services-title {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to right, #ffe600, #ffb300);
+    color: #d40000;
+    padding: 25px 10px;
+    margin: 0 0 40px 0;
+    border-top: 8px solid red;
+    border-bottom: 8px solid #c4c400;
+    font-family: Impact, Arial Black, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #fff;
+}
+
+
+/* services image styles */
+
+.hero-image {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+}
+
+/* General section styles */
+.section {
+    padding: 0;
+    text-align: center;
+}
+
+.section h1,
+.section h2 {
+    margin: 0 0 25px 0;
+}
+
+.hero-image + .section,
+.about-section + .section {
+    padding-top: 60px;
+}
+
+/* Accessibility on Our Values */
+
+.value-bar {
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #c40000, #e00000);
+    color: white;
+    border-radius: 18px;
+    padding: 22px 28px;
+    margin-bottom: 22px;
+    border: 4px solid #ffcc00;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.value-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffe600, #ffb300);
+}
+
+.value-bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.08), rgba(0,0,0,0.08));
+    pointer-events: none;
+}
+
+.value-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    min-width: 260px;
+    position: relative;
+    z-index: 1;
+}
+
+.value-text {
+    font-size: 1.4rem;
+    color: #fff8cc;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    white-space: normal;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.value-bar:hover {
+    transform: translateX(35px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+}
+
+.value-bar:hover .value-text,
+.value-bar:focus .value-text,
+.value-bar:focus-visible .value-text,
+.value-bar[aria-expanded="true"] .value-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.value-bar:focus,
+.value-bar:focus-visible {
+    outline: 4px solid black;
+    outline-offset: 4px;
+}
+
+/* === FLIP CARD LAYOUT === */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 30px;
+    align-items: start;
+}
+
+.card {
+    perspective: 1000px;
+    width: 100%;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    min-height: 480px; /* reduced from 700 */
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner, .card:focus .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* was centering content vertically */
+    align-items: center;
+
+    padding: 28px 22px;
+    border-radius: 20px;
+    border: 4px solid red;
+    background: linear-gradient(to bottom, #f5e6a3, #e8cc6a);
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card-front h3,
+.card-back h3 {
+    color: red;
+    font-family: Impact, Arial Black, sans-serif;
+    font-size: 1.5rem;
+    margin: 0 0 18px 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.card-front p,
+.card-back li {
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+}
+
+.card-back ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-back li {
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+.card:focus-within {
+    outline: 3px solid #ffcc00;
+    outline-offset: 6px;
+}
+
+/* centered tagline below cards */
+.services-tagline {
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #222;
+    text-shadow: 1px 1px 0 #ffd400;
+    line-height: 1.5;
+    max-width: 700px;
+    display: block;
+}
+
+.service-card {
+    background: linear-gradient(to bottom, #e6d18f, #d4b75f);
+    border: 4px solid red;
+    border-radius: 25px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    min-height: auto;
+}
+
+/* tighten heading spacing */
+.service-card h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* tighten paragraph spacing */
+.service-card p {
+    margin: 10px 0;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-inner {
+        min-height: 420px;
+    }
+}
+
+/* CONSULTATION FORM FIX */
+
+.consultation-form {
+    border: 2px solid #a8a8a8;
+    padding: 24px;
+    background-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+    padding: 12px 14px;
+    font: inherit;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #777;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    max-width: 100%;
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+    border-color: #005fcc;
+}
+
+/* Mobile Adjustments Home Page */
+
+@media screen and (max-width: 768px) {
+    .panic-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .panic-card,
+    .panic-card.tall,
+    .panic-card.wide {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .panic-card img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .panic-card h3 {
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+    .panic-card p {
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .panic-card .solution-box {
+        font-size: 1.15rem;
+        line-height: 1.3;
+        padding: 14px;
+    }
+}
+
+/* Mobile accessibility focus styles for flip cards  */
+
+@media screen and (max-width: 768px) {
+    .values-section {
+        padding: 0 16px 40px;
+    }
+
+    .values-section h2 {
+        font-size: 2.3rem;
+        line-height: 1.1;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .value-bar {
+        width: 100%;
+        min-height: 120px;
+        padding: 20px 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .value-title {
+        font-size: 1.8rem;
+        line-height: 1.1;
+        font-weight: 900;
+        display: block;
+    }
+
+    .value-text {
+        display: block;
+        font-size: 1.05rem;
+        line-height: 1.4;
+        max-width: 90%;
+    }
+}
