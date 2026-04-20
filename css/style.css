@@ -756,7 +756,7 @@ body {
 .contact-hero img {
     width: 100%;
     height: auto;
-    object-fit: contain; /* KEY: fills like your About page */
+    object-fit: contain;
     display: block;
 }
 
