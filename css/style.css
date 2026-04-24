@@ -365,8 +365,7 @@ main {
 .about-content p {
     font-size: 1.5rem;
     margin-bottom: 30px;
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: left;
 }
 
 .about-content h2 {
